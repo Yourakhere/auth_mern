@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
-import Login from './pages/Login'; // Corrected import statement
-import Signup from './pages/Signup'; // Corrected import statement
+import Login from './pages/Login';  
+import Signup from './pages/Signup'; 
 import 'react-toastify/dist/ReactToastify.css';
 import RefreshHandler from './pages/RefreshHandler';
 
