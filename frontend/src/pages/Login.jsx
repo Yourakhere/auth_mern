@@ -4,7 +4,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { handleError, handleSuccess } from '../utils';
 
-function login() {
+function Login() {
     const [loginInfo, setLoginInfo] = useState({
         email: '',
         password: ''
@@ -87,4 +87,4 @@ function login() {
     );
 }
 
-export default login;
+export default Login;
