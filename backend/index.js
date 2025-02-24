@@ -7,7 +7,6 @@ const ProductsRouter = require('./Routes/ProductsRouter');
 
 require('dotenv').config();
 require('./Models/db');
-const PORT = process.env.PORT || 5654;
 
 app.get('/ak', (req, res) => {
     res.send('Abhishek Rock');
@@ -18,6 +17,5 @@ app.use(cors());
 app.use('/auth', AuthRouter); 
 app.use('/products', ProductsRouter); 
 
-app.listen(PORT, () => {
-    console.log(`Server is running on ${PORT}`)
-});
+// Export the app as a serverless function for Vercel
+module.exports = app;
