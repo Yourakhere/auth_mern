@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "backend/index.js",  // Ensure the path matches the location of your entry point file
+      "src": "backend/index.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",  // Routes all requests to your backend index.js
-      "dest": "backend/index.js"
+      "src": "/(.*)",
+      "dest": "/backend/index.js"
     }
   ]
 }
