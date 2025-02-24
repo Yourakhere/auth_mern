@@ -25,7 +25,7 @@ function Signup() {
             return handleError('Please fill all the fields');
         }
         try {
-            const url = 'https://deploy-mern-app-1-api.vercel.app/auth/signup';
+            const url = 'https://123-lime-one.vercel.app/auth/signup';
             const response = await fetch(url, {
                 method: 'POST',
                 headers: {
